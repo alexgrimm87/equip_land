@@ -1,0 +1,84 @@
+<div class="hidden-block">
+
+    <div id="call_success">
+         <div class="call-success-wrap">
+             <div class="call-success-title"><!-- Спасибо за заявку!--></div>
+             <div class="call-success-subtitle"><!-- Мы свяжемся с Вами в ближайшее время --></div>
+         </div>
+    </div>
+
+    <div id="call-popup">
+        <form action="ajax.php" class="contact-form">
+            <div class="contact-form-title">
+                <!-- Title -->
+            </div>
+            <div class="contact-form-row cfix">
+                <div class="contact-form-item">
+                    <div class="contact-form-item-input form_row">
+                        <div class="form_input">
+                            <input type="text" name="contact_name" required="required" value="" placeholder="Ваше Имя">
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-item">
+                    <div class="contact-form-item-input form_row">
+                        <div class="form_input">
+                            <input type="text" name="contact_tel" value="" required="required" placeholder="Ваш номер" class="tel-mask">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-row cfix">
+                <div class="contact-form-item">
+                    <button type="submit" class="contact-submit">
+                        <span><!-- Отправить заявку  --></span>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="order-popup" class="order-popup">
+        <form class="order-form" action="https://equip.1podarok.com/podyaka.php" method="post" enctype="multipart/form-data">
+            <div class="form-title">
+                <div class="text">
+                    <h3>ЗАКАЗАТЬ СЕЙЧАС</h3>
+                    <h4>с оплатой при получении</h4>
+                </div>
+                <div class="price">
+                    <div class="before"><s><span>1285</span>грн</s></div>
+                    <p>за <span><b>449</b></span> грн</p>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-field">
+                    <input type="text" class="phone el-input" name="PHONE_MOBILE" required="required" placeholder="Ваш телефон" value="">
+                </div>
+
+                <input type="hidden" name="TITLE" value="">
+                <input type="hidden" name="source" class="source" value="empty">
+                <input type="hidden" name="term" class="term" value="empty">
+                <input id="form_id" type="hidden" name="form_id" value="">
+                <input class="geolocation" name="geolocation" type="hidden" value="">
+
+                <input type="submit" class="el-button" value="заказать">
+            </div>
+        </form>
+    </div>
+
+    <div id="review-popup" class="order-popup review">
+        <form action="\" class="review">
+            <div class="form-row">
+                <input type="text" name="name" value="" required="required" placeholder="Ваше имя" class="el-input">
+            </div>
+            <div class="form-row">
+                <input type="text" name="mail" value="" required="required" placeholder="Ваш e-mail" class="el-input">
+            </div>
+            <div class="form-row">
+                <textarea name="review" rows="5" class="el-textarea" required="required" placeholder="Отзыв"></textarea>
+            </div>
+            <input type="submit" value="Заказать" class="el-button">
+        </form>
+    </div>
+
+</div>
